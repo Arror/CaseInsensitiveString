@@ -1,0 +1,16 @@
+PODS:
+  - CaseInsensitiveString (1.0.0)
+
+DEPENDENCIES:
+  - CaseInsensitiveString (from `../../CaseInsensitiveString`)
+
+EXTERNAL SOURCES:
+  CaseInsensitiveString:
+    :path: ../../CaseInsensitiveString
+
+SPEC CHECKSUMS:
+  CaseInsensitiveString: cb637bb299f03c0b05a2e77f20e5dc12d432ace3
+
+PODFILE CHECKSUM: 743969515bde5766770976759bf3da9dbe0aaffc
+
+COCOAPODS: 1.2.0
