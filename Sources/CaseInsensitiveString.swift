@@ -13,12 +13,14 @@ public struct CaseInsensitiveString {
     }
 }
 
-public func ==(lhs: CaseInsensitiveString, rhs: CaseInsensitiveString) -> Bool {
-    return lhs.lowercased() == rhs.lowercased()
-}
-
 public func ~=(string: String, cis: CaseInsensitiveString) -> Bool {
     return string.lowercased() == cis.lowercased()
+}
+
+extension CaseInsensitiveString: Equatable {
+    public static func ==(lhs: CaseInsensitiveString, rhs: CaseInsensitiveString) -> Bool {
+        return lhs.lowercased() == rhs.lowercased()
+    }
 }
 
 extension CaseInsensitiveString: Hashable {
